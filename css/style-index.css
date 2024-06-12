@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    color: black;
+}
+
+/* CABEÇALHO */
+header {
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 80px;
+    border-end-end-radius: 30px;
+    border-end-start-radius: 30px;
+    box-shadow: 2px 2px 13px rgba(102, 102, 102, 0.3);
+}
+
+.container-cabecalho {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-logo {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-logo img {
+    width: 160px;
+}
+
+.container-navbar {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.container-navbar li {
+    margin: 0 30px;
+}
+
+.container-navbar a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 500ms;
+    border-bottom: 1px solid white;
+}
+
+.container-navbar a:hover {
+    color: #85aa00;
+    border-bottom: 1px solid #C6FF00;
+}
+
+.container-lupa-button {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-lupa-button img {
+    width: 20px;
+}
+
+.container-lupa-button img:hover {
+    cursor: pointer;
+}
+
+.container-lupa-button button {
+    margin: 0 0 0 20px;
+    border: 1px solid #DADCE0;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 500ms;
+    box-shadow: 0px 0px 10px #c8ff0000;
+}
+
+.container-lupa-button button:hover {
+    background-color: #C6FF00;
+    box-shadow: 0px 0px 10px #c8ff0096;
+    cursor: pointer;
+}
+
+/* CORPO PRINCIPAL */
+main {
+    /* border: 1px solid red; */
+    width: 100%;
+    /* height: calc(100vh - 80px); */
+}
+
+.container-h1-text {
+    /* border: 1px solid red; */
+    margin-top: 50px;
+}
+
+.container-h1-text p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.container-h1-text h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.container-imagens {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-imagens img {
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 7px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+#img1 {
+    margin-top: -260px;
+}
+
+#img2 {
+    margin: 50px 150px 0 150px;
+}
+
+#img3 {
+    margin-top: -150px;
+}
+
+/* SOBRE AS PLANTAS */
+.container-sobre-plantas {
+    /* border: 1px solid red; */
+    height: 400px;
+    margin-top: 65px;
+    display: flex;
+}
+
+.container-texto-sobre {
+    /* border: 1px solid green; */
+    width: 50%;
+    height: 100%;
+}
+
+.container-texto-sobre h2 {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 70px;
+}
+
+.container-texto-sobre p {
+    width: 85%;
+    text-align: justify;
+    font-size: 23px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.container-texto-sobre p strong {
+    color: #85aa00;
+}
+
+.container-texto-sobre button {
+    border: 1px solid #DADCE0;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 500ms;
+    box-shadow: 0px 0px 10px #c8ff0000;
+}
+
+.container-texto-sobre button:hover {
+    background-color: #C6FF00;
+    box-shadow: 0px 0px 10px #c8ff0096;
+    cursor: pointer;
+}
+
+.container-imagem-sobre {
+    /* border: 1px solid blue; */
+    background-image: url(../images/planta4.webp);
+    background-size: cover;
+    background-position: center center;
+    border-start-start-radius: 20px;
+    border-end-start-radius: 20px;
+    width: 50%;
+    height: 100%;
+    box-shadow: 7px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* DESCUBRA */
+.container-descubra {
+    /* border: 1px solid red; */
+    height: 400px;
+    display: flex;
+}
+
+.container-icons-descubra {
+    /* border: 1px solid green; */
+    width: 10%;
+    height: 100%;
+}
+
+.container-texto-descubra {
+    /* border: 1px solid blue; */
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-texto-descubra h2 {
+    width: 80%;
+    text-align: end;
+    font-size: 60px;
+}
+
+.container-texto-descubra strong {
+    color: #85aa00;
+}
+
+/* PLANTAR E FAZER */
+.container-plantar-fazer {
+    /* border: 1px solid red; */
+    height: 400px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.container-plantar {
+    /* border: 1px solid blue; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-plantar {
+    border: 1px solid #DADCE0;
+    border-radius: 30px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-plantar img {
+    width: 80px;
+    margin: 40px 0 0 0;
+}
+
+.card-plantar h3 {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.card-plantar p {
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.card-plantar button {
+    border: 1px solid #DADCE0;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 500ms;
+    margin: 10px 0 40px 0;
+    box-shadow: 0px 0px 9px #c8ff0000;
+}
+
+.card-plantar button:hover {
+    background-color: #C6FF00;
+    box-shadow: 0px 0px 10px #c8ff0096;
+    cursor: pointer;
+}
+
+.container-fazer {
+    /* border: 1px solid green; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* PLANTA COMPLETA */
+.container-planta-completa {
+    /* border: 1px solid red; */
+    background-image: url(../images/planta5.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    /* box-shadow: 7px 4px 20px rgba(0, 0, 0, 0.3); */
+}
+
+/* RODAPÉ */
+footer {
+    /* height: 400px; */
+    background-color: #F1F3F4;
+}
+
+.container-redes-sociais {
+    width: 85%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 1px solid #DADCE0;
+    margin-bottom: 20px;
+}
+
+.container-redes-sociais p {
+    color: #202124;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* margin-left: 50px; */
+}
+
+.container-redes-sociais img {
+    width: 22px;
+    margin: 0 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container-redes-sociais img:hover {
+    cursor: pointer;
+}
+
+.container-nav-rodape {
+    /* border: 1px solid red; */
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.container-nav-rodape p {
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.container-nav-rodape ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.container-nav-rodape li {
+    margin: 15px 0;
+}
+
+.container-nav-rodape a {
+    text-decoration: none;
+    color: #5F6368;
+    font-weight: 500;
+    transition: 500ms;
+}
+
+.container-nav-rodape a:hover {
+    color: #85aa00;
+    cursor: pointer;
+}
+
+.container-direitos {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 0.9em;
+    color: #555;
+}

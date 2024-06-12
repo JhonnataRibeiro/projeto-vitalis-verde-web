@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "imagem": "./images/preparacoes/infusao.png",
+        "titulo": "INFUSÃO",
+        "descricao": "O primeiro passo é colocar a água para ferver e, logo que as primeiras bolhas estiverem sendo formadas, desligar o fogo. Despejar a água aquecida sobre as plantas frescas  Abafar e deixar descansar por 5 a 15 minutos. Coar e beber. Consumir dentro de 24horas."
+    },
+    {
+        "id": "2",
+        "imagem": "./images/preparacoes/compressa.jpeg",
+        "titulo": "COMPRESSA",
+        "descricao": "É uma preparação de uso local (tópico) que atua pela penetração dos princípios ativos através da pele. Utilizam-se panos, chumaços de algodão ou gaze embebidos em um infuso concentrado, decocto, sumo ou tintura da planta dissolvida em água. A compressa pode ser quente ou fria."
+    },
+    {
+        "id": "3",
+        "imagem": "./images/preparacoes/pos.png",
+        "titulo": "PÓS",
+        "descricao": "A planta deve ser seca suficiente para permitir sua trituração com as mãos ou moedores, em seguida dev-se peneirar e guardar em frascos higienizados e bem fechado. As cascas e raízes devem ser moídas até se transformarem em pó. Para uso interno pode ser misturado ao leite ou mel e externo, é espalhado diretamente sobre o local ferido ou misturado em óleo, vaselina ou água antes de aplicar."
+    },
+    {
+        "id": "4",
+        "imagem": "./images/preparacoes/decoccao.jpg",
+        "titulo": "DECOCÇÃO",
+        "descricao": "Preparação normalmente utilizada para ervas não aromáticas (que contém princípios estáveis ao calor) e para as drogas vegetais constituídas por sementes, raízes, cascas e outras partes da planta. Deve-se colocar a quantidade da planta e a água numa panela e levar ao fogo, quando iniciar a fervura marca-se 5 a 10 minutos e desliga o fogo e abafa. Coar e espremer a erva com um pedaço de pano ou coador. O decocto deve ser utilizado no mesmo dia de seu preparo."
+    },
+    {
+        "id": "5",
+        "imagem": "./images/preparacoes/maceracao.png",
+        "titulo": "MACERAÇÃO",
+        "descricao": "Preparação (realizada a frio) que consiste em colocar a parte da planta medicinal dentro de um recipiente contendo álcool, óleo, água ou outro líquido. Folhas, flores e outras partes tenras (mais duras) ficam macerando por 18 a 24 horas. O recipiente permanece em lugar fresco, protegido da luz solar direta, podendo ser agitado de vez em quando. Findado o tempo previsto, filtra-se o líquido e pode-se acrescentar uma quantidade de diluente (água, por exemplo), se achar necessário para obter um volume final desejado. ATENÇÃO: Plantas onde há possibilidade de fermentações não devem ser preparadas desta forma."
+    }
+]

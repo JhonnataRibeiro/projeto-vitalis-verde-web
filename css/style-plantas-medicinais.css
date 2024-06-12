@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    color: black;
+}
+
+/* CABEÇALHO */
+header {
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 80px;
+    border-end-end-radius: 30px;
+    border-end-start-radius: 30px;
+    box-shadow: 2px 2px 13px rgba(102, 102, 102, 0.3);
+}
+
+.container-cabecalho {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-logo {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-logo img {
+    width: 160px;
+}
+
+.container-navbar {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.container-navbar li {
+    margin: 0 30px;
+}
+
+.container-navbar a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 500ms;
+    border-bottom: 1px solid white;
+}
+
+.container-navbar a:hover {
+    color: #85aa00;
+    border-bottom: 1px solid #C6FF00;
+}
+
+#plantas-medicinais {
+    color: #85aa00;
+    border-bottom: 1px solid #C6FF00;
+}
+
+.container-lupa-button {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-lupa-button img {
+    width: 20px;
+}
+
+.container-lupa-button img:hover {
+    cursor: pointer;
+}
+
+.container-lupa-button button {
+    margin: 0 0 0 20px;
+    border: 1px solid #DADCE0;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 500ms;
+    box-shadow: 0px 0px 10px #c8ff0000;
+}
+
+.container-lupa-button button:hover {
+    background-color: #C6FF00;
+    box-shadow: 0px 0px 10px #c8ff0096;
+    cursor: pointer;
+}
+
+/* CARD PLANTAS MEDICINAIS */
+.container-titulo-principal {
+    /* border: 1px solid orange; */
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-titulo-principal p {
+    font-size: 20px;
+}
+
+.box1-cards {
+    /* border: 1px solid blue; */
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.card-planta {
+    border: 1px solid #DADCE0;
+    width: 18%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 7px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-planta div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center center;
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+}
+
+.div-box {
+    margin: 10px 0;
+}
+
+.box-img {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 180px;
+}
+
+.card-planta h2 {
+    font-size: 18px;
+}
+
+.card-planta button {
+    border: 1px solid #DADCE0;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 500ms;
+    box-shadow: 0px 0px 10px #c8ff0000;
+}
+
+.card-planta button:hover {
+    background-color: #C6FF00;
+    box-shadow: 0px 0px 10px #c8ff0096;
+    cursor: pointer;
+}
+
+.box2-cards {
+    /* border: 1px solid green; */
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.box3-cards {
+    /* border: 1px solid green; */
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
