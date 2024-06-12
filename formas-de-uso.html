@@ -44,7 +44,7 @@
                 </div>
 
                 <div class="box-button">
-                    <button>Saiba mais</button>
+                    <button value="1" onclick="handleSaibaMais(this.value)">Saiba mais</button>
                 </div>
             </div>
 
@@ -56,7 +56,7 @@
                 </div>
 
                 <div class="box-button">
-                    <button>Saiba mais</button>
+                    <button value="2" onclick="handleSaibaMais(this.value)">Saiba mais</button>
                 </div>
             </div>
 
@@ -68,7 +68,7 @@
                 </div>
 
                 <div class="box-button">
-                    <button>Saiba mais</button>
+                    <button value="3" onclick="handleSaibaMais(this.value)">Saiba mais</button>
                 </div>
             </div>
 
@@ -80,7 +80,7 @@
                 </div>
 
                 <div class="box-button">
-                    <button>Saiba mais</button>
+                    <button value="4" onclick="handleSaibaMais(this.value)">Saiba mais</button>
                 </div>
             </div>
 
@@ -92,10 +92,38 @@
                 </div>
 
                 <div class="box-button">
-                    <button>Saiba mais</button>
+                    <button value="5" onclick="handleSaibaMais(this.value)">Saiba mais</button>
                 </div>
             </div>
         </div>
     </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var plantaId = localStorage.getItem("preparoId");
+
+            if (plantaId) {
+                fetch("./json/about-preparo.json") // Carrega o arquivo JSON
+                    .then(response => response.json()) // Converte a resposta para JSON
+                    .then(data => {
+                        var planta = data.find(p => p.id == plantaId);
+
+                        if (planta) {
+                            document.querySelector(".container-imagem-principal").style.backgroundImage = `url(${planta.imagem})`;
+                            document.querySelector(".container-about-plant h1").innerText = planta["titulo"];
+                            document.querySelector(".pd1").innerText = planta["descricao"];
+                        } else {
+                            console.error("Planta não encontrada no JSON.");
+                        }
+                    })
+                    .catch(error => console.error("Erro ao carregar o JSON:", error));
+            }
+        });
+
+        function handleSaibaMais(value) {
+            localStorage.setItem("preparoId", value);
+            window.location.href = "./detalhe-preparo.html";
+        }
+    </script>
 </body>
 </html>

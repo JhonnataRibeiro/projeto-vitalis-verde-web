@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitalis Verde</title>
+    <link rel="stylesheet" href="./css/detalhe-preparo.css">
+    <link rel="shortcut icon" href="./icons/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container-nav-bar">
+            <a href="./index.html"><img id="logo-site" src="./icons/logo.svg" alt=""></a>
+            
+            <div>
+                <img id="lupa" src="./icons/lupa.png" alt="">
+                <img id="menu" src="./icons/menu.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <main>
+            <div id="img" class="container-imagem-principal"></div>
+    
+            <div class="container-about-plant">
+                <h1 id="h1">XXX</h1>
+    
+                <p id="des" class="p-descricao pd1">xxx</p>
+            </div>
+        </main>
+    </main>
+
+    <div id="menu-modal" class="menu-modal">
+        <div class="menu-content">
+            <span id="close-menu" class="close">&times;</span>
+            <ul>
+                <li><a href="./index.html">Página Inicial</a></li>
+                <li><a href="./plantas-medicinais.html">Plantas Medicinais</a></li>
+                <li><a href="./formas-de-uso.html">Formas de Uso</a></li>
+                <li><a href="./quem-somos-nos.html">Quem Somos Nós</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var menuIcon = document.getElementById("menu");
+            var menuModal = document.getElementById("menu-modal");
+            var closeMenu = document.getElementById("close-menu");
+    
+            // Abrir o menu modal ao clicar no ícone do menu
+            menuIcon.addEventListener("click", function() {
+                menuModal.style.display = "block";
+            });
+    
+            // Fechar o menu modal ao clicar no 'X'
+            closeMenu.addEventListener("click", function() {
+                menuModal.style.display = "none";
+            });
+    
+            // Fechar o menu modal se clicar fora do conteúdo do menu
+            window.addEventListener("click", function(event) {
+                if (event.target == menuModal) {
+                    menuModal.style.display = "none";
+                }
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var plantaId = localStorage.getItem("preparoId");
+
+            if (plantaId) {
+                fetch("./json/about-preparo.json") // Carrega o arquivo JSON
+                    .then(response => response.json()) // Converte a resposta para JSON
+                    .then(data => {
+                        var planta = data.find(p => p.id == plantaId);
+
+                        if (planta) {
+                            document.querySelector(".container-imagem-principal").style.backgroundImage = `url(${planta.imagem})`;
+                            document.querySelector(".container-about-plant h1").innerText = planta["titulo"];
+                            document.querySelector(".pd1").innerText = planta["descricao"];
+                        } else {
+                            console.error("Planta não encontrada no JSON.");
+                        }
+                    })
+                    .catch(error => console.error("Erro ao carregar o JSON:", error));
+            }
+        });
+    </script>
+</body>
+</html>
